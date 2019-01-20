@@ -1,0 +1,36 @@
+command=/usr/lib/i3blocks/$BLOCK_NAME
+separator_block_width=24
+
+[weather]
+command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+interval=3600
+
+[volume]
+label=
+instance=Master
+interval=1
+signal=10
+
+[battery]
+label=
+interval=60
+
+[load_average]
+label=
+interval=1
+
+[time-pst]
+command=TZ=America/Los_Angeles date '+%Z %Y %h %d %a %H:%M:%S'
+interval=1
+
+[time-est]
+command=TZ=America/New_York date '+%Z %a %H:%M:%S'
+interval=1
+
+[time-gmt]
+command=TZ=Europe/London date '+%Z %a %H:%M:%S'
+interval=1
+
+[time-cst]
+command=TZ=Asia/Shanghai date '+%Z %a %H:%M:%S'
+interval=1
