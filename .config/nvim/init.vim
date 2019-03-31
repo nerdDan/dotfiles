@@ -1,11 +1,11 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'easymotion/vim-easymotion'
-Plug 'leafgarland/typescript-vim'
+"Plug 'leafgarland/typescript-vim'
 "Plug 'lervag/vimtex'
 Plug 'mattn/emmet-vim'
-Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
+"Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
 Plug 'nlknguyen/papercolor-theme'
-Plug 'pangloss/vim-javascript'
+"Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
