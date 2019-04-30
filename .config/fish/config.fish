@@ -1,6 +1,5 @@
 set -x _JAVA_AWT_WM_NONREPARENTING 1
 set -x EDITOR nvim
-set -x GOOGLE_APPLICATION_CREDENTIALS /home/dan/Desktop/elsternbruecke-firebase-adminsdk-e4uv2-8451d1e57d.json
 set -x GTK_IM_MODULE fcitx
 set -x QT_IM_MODULE fcitx
 set -x SONAR_SCANNER_HOME /opt/sonar-scanner

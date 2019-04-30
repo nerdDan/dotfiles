@@ -10,7 +10,12 @@ set $term kitty
 set $menu rofi -show combi
 
 ### Output configuration
+client.focused #007777 #007777 #ffffff #007777 #007777
+default_border pixel 1
+font pango:SauceCodePro Nerd Font 9
+gaps inner 16
 output * bg ~/.local/share/backgrounds/firewatch-r0.jpg fill
+smart_gaps on
 
 ### Idle configuration
 exec swayidle  -w \
@@ -18,9 +23,6 @@ exec swayidle  -w \
   timeout 600 'swaymsg "output * dpms off"' \
   resume 'swaymsg "output * dpms on"' \
   before-sleep 'swaylock -f -c 000000'
-
-### Mako for notification
-exec mako
 
 ### Input configuration
 input "1739:0:Synaptics_TM3288-011" {
@@ -30,9 +32,21 @@ input "1739:0:Synaptics_TM3288-011" {
   middle_emulation enabled
 }
 
+### Assignations
+assign [class="Code"] 2
+assign [class="Firefox"] 3
+for_window [class="Enpass"] move scratchpad
+
+### Autostart
+exec enpass
+exec fcitx-autostart
+exec kitty
+exec mako
+
 ### Key bindings
 
 ##### Basics:
+
   bindsym $mod+Return exec $term
   bindsym $mod+Shift+q kill
   bindsym $mod+d exec $menu
@@ -73,6 +87,7 @@ input "1739:0:Synaptics_TM3288-011" {
   bindsym $mod+7 workspace 7
   bindsym $mod+8 workspace 8
   bindsym $mod+9 workspace 9
+
   # move focused container to workspace
   bindsym $mod+Shift+1 move container to workspace 1
   bindsym $mod+Shift+2 move container to workspace 2
@@ -111,29 +126,12 @@ input "1739:0:Synaptics_TM3288-011" {
 
 ##### Scratchpad:
 
-  # Sway has a "scratchpad", which is a bag of holding for windows.
-  # You can send windows there and get them back later.
-
   # Move the currently focused window to the scratchpad
   bindsym $mod+Shift+minus move scratchpad
 
   # Show the next scratchpad window or hide the focused scratchpad window.
   # If there are multiple scratchpad windows, this command cycles through them.
   bindsym $mod+minus scratchpad show
-
-##### Resizing containers:
-
-mode "resize" {
-  bindsym $left resize shrink width 10px
-  bindsym $down resize grow height 10px
-  bindsym $up resize shrink height 10px
-  bindsym $right resize grow width 10px
-
-  # return to default mode
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-}
-bindsym $mod+r mode "resize"
 
 ##### Multimedia keys
 
@@ -144,7 +142,7 @@ bindsym XF86MonBrightnessDown exec light -U 5
 bindsym XF86MonBrightnessUp exec light -A 5
 
 ##### Screen Capture
-bindsym Print exec swaygrab "/home/dan/screenshot-$(date +%Y%m%d-%H%M%S).png"
+bindsym --release Print exec grim -g \"$(slurp)" - | wl-copy
 
 ### Status Bar:
 bar {
@@ -152,21 +150,10 @@ bar {
   tray_output primary
   colors {
     background #32323200
-    focused_workspace #FFFFFF00 #FF7700 #FFFFFF
-    inactive_workspace #32323200 #32323200 #5c5c5c
+    focused_workspace #4C789900 #007777 #FFFFFF
+    inactive_workspace #33333300 #22222200 #777777
   }
 }
-
-### Gaps
-gaps inner 16
-smart_gaps on
-default_border pixel 2
-font pango:SauceCodePro Nerd Font 9
-
-### Assignations
-exec kitty
-assign [class="Code"] 2
-assign [class="Firefox"] 3
 
 ### Includes
 include @sysconfdir@/sway/config.d/*

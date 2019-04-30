@@ -6,4 +6,5 @@ function pacclean
 			sudo pacman -D --asdeps $pac
 		end
 	end
+	sudo pacman -R (pacman -Qdtq)
 end
