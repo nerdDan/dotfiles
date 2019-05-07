@@ -7,4 +7,5 @@ function pacclean
 		end
 	end
 	sudo pacman -R (pacman -Qdtq)
+	yay -Yc
 end

@@ -1,3 +1,3 @@
 function pacleaves
-	comm -23 (yaourt -Qe | sort | psub) (yaourt -Qg base base-devel | sort | psub) | less
+	comm -23 (pacman -Qenq | sort | psub) (pacman -Qgq base base-devel | sort | psub) | less
 end
