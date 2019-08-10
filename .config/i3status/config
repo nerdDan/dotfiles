@@ -24,11 +24,11 @@ volume master {
 }
 
 cpu_usage {
-  format = " %usage"
+  format = " %usage"
 }
 
 cpu_temperature 0 {
-  format = " %degrees°C"
+  format = " %degrees°C"
 }
 
 battery all {

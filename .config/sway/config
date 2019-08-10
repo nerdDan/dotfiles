@@ -12,7 +12,7 @@ set $menu rofi -show drun
 ### Output configuration
 client.focused #007777 #007777 #ffffff #007777 #007777
 default_border pixel 1
-font FontAwesome, Source Code Pro 10
+font Source Code Pro 10
 gaps inner 16
 output * bg ~/.local/share/backgrounds/mojave/day_5120x2280.jpg fill
 smart_borders on
@@ -36,16 +36,16 @@ input "*" {
 }
 
 ### Assignations
-assign [class="Firefox"] 3
-assign [title="Code - OSS"] 4
-for_window [class="Enpass"] move scratchpad
+assign [class="^code-oss$"] 2
+assign [class="^firefox$"] 3
+assign [class="^tutanota-desktop$"] 4
+for_window [class="Spotify"] move to workspace 5
 
 ### Autostart
 exec enpass
 exec fcitx-autostart
 exec kitty
 exec mako
-#exec settimed mojave-timed
 
 ### Key bindings
 
@@ -135,11 +135,11 @@ exec mako
 
 ##### Multimedia keys
 
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10%
-bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioRaiseVolume  exec pactl set-sink-volume @DEFAULT_SINK@ +10%   && pkill -RTMIN+1 i3blocks
+bindsym XF86AudioLowerVolume  exec pactl set-sink-volume @DEFAULT_SINK@ -10%   && pkill -RTMIN+1 i3blocks
+bindsym XF86AudioMute         exec pactl set-sink-mute   @DEFAULT_SINK@ toggle && pkill -RTMIN+1 i3blocks
 bindsym XF86MonBrightnessDown exec light -U 5
-bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessUp   exec light -A 5
 
 ##### Screen Capture
 bindsym --release Print exec grim -g "$(slurp)" - | wl-copy
@@ -157,6 +157,7 @@ bar {
     focused_workspace  #00000077 #00777777 #FFFFFF
     inactive_workspace #00000077 #00000077 #FFFFFF
   }
+  swaybar_command waybar
 }
 
 ### Includes
