@@ -32,13 +32,13 @@ input "*" {
   natural_scroll enabled
   middle_emulation enabled
   xkb_layout us
-  xkb_variant intl
 }
 
 ### Assignations
 assign [class="^code-oss$"] 2
 assign [class="^firefox$"] 3
 assign [class="^tutanota-desktop$"] 4
+assign [class="^Signal$"] 4
 for_window [class="Spotify"] move to workspace 5
 
 ### Autostart
