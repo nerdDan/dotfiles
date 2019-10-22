@@ -1,0 +1,5 @@
+aria2
+firefox
+links
+translate-shell
+youtube-dl

@@ -1,0 +1,12 @@
+grim
+mako
+otf-font-awesome
+rofi
+slurp
+sway
+swayidle
+swaylock
+waybar
+wl-clipboard
+xorg-server-xwayland
+xorg-xhost

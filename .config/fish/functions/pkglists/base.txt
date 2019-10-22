@@ -1,0 +1,10 @@
+autoconf
+automake
+bison
+fakeroot
+linux
+linux-firmware
+linux-headers
+man-db
+networkmanager
+pkgconf

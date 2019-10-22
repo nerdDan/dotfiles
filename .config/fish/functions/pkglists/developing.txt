@@ -1,0 +1,8 @@
+cmake
+code
+docker-compose
+go
+postgresql
+python-pipenv
+python-pylint
+rustup

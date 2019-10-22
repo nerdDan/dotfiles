@@ -1,0 +1,14 @@
+baobab
+blueman
+eog
+evince
+fcitx-anthy
+fcitx-gtk3
+fcitx-rime
+file-roller
+gnome-disk-utility
+kitty
+nautilus
+noto-fonts-cjk
+pavucontrol
+totem

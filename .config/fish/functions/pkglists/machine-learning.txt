@@ -1,0 +1,5 @@
+python-matplotlib
+python-pandas
+python-pytorch
+python-scikit-learn
+python-tensorflow

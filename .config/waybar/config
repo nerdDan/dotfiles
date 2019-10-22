@@ -83,6 +83,7 @@
     "format-icons": ["", "", "", "", ""]
   },
   "clock": {
-    "format": "{:%Z %Y %h %d %a %H:%M:%S}"
+    "format": "{:%Z %Y %h %d %a %H:%M:%S}",
+    "interval": 1
   }
 }
