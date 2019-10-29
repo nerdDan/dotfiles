@@ -1,4 +1,4 @@
-set pkgs base
+set pkgs ()
 for list in $HOME/.config/fish/functions/pkglists/*
 	set --append pkgs (cat $list)
 end
@@ -54,21 +54,15 @@ function check_unrequired_exp
 end
 
 function check_unrequired_dep
-	set unreq (pacman -Qdqt)
+	set unreq (pacman -Qdqtt)
 	if set -q unreq[1]
 		echo "The following package(s) are unrequired thus should be removed:"
 		echo -e "\t" $unreq
 		return 1
 	end
-	set unreq (pacman -Qdqtt)
-	if set -q unreq[1]
-		echo "The following package(s) are optionally required thus should be removed:"
-		echo -e "\t" $unreq
-		return 1
-	end
 end
 
-function paccheck
+function pacdoctor
 	check_dup
 	and check_ins
 	and check_dep

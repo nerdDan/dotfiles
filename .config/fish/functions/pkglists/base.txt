@@ -1,10 +1,9 @@
 autoconf
-automake
-bison
+base
 fakeroot
 linux
 linux-firmware
 linux-headers
 man-db
 networkmanager
-pkgconf
+usbutils

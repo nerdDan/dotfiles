@@ -1,5 +1,6 @@
 baobab
 blueman
+cheese
 eog
 evince
 fcitx-anthy
@@ -7,6 +8,7 @@ fcitx-gtk3
 fcitx-rime
 file-roller
 gnome-disk-utility
+gvfs-mtp
 kitty
 nautilus
 noto-fonts-cjk

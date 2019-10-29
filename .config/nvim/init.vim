@@ -36,3 +36,4 @@ set laststatus=2
 set list listchars=extends:❯,precedes:❮,tab:▸\ ,trail:˽
 set number
 set relativenumber
+set termguicolors
