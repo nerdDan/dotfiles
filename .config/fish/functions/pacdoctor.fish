@@ -5,7 +5,7 @@ end
 set pkgs (echo $pkgs | tr " " "\n" | sort)
 
 function check_dup
-	set duplicated (comm -23 (echo $pkgs | tr " " "\n" | psub) (echo $pkgs | tr " " "\n" | uniq | psub))
+	set duplicated (echo $pkgs | tr " " "\n" | uniq --repeated)
 	if set -q duplicated[1]
 		echo "The following package(s) are duplicated in the list:"
 		echo -e "\t" $duplicated
@@ -14,24 +14,17 @@ function check_dup
 end
 
 function check_ins
-	set unins (comm -23 (echo $pkgs | tr " " "\n" | psub) (pacman -Qq | sort | psub))
-	if set -q unins[1]
-		echo "The following package(s) should be installed:"
-		echo -e "\t" $unins
-		return 1
-	end
-	set unins (comm -23 (echo $pkgs | tr " " "\n" | psub) (pacman -Qeq | sort | psub))
-	if set -q unins[1]
-		echo "The following package(s) should be marked as explicitly installed:"
-		echo -e "\t" $unins
+	set absent (comm -23 (echo $pkgs | tr " " "\n" | psub) (pacman -Qeq | sort | psub))
+	if set -q absent[1]
+		echo "The following package(s) should be explicitly installed:"
+		echo -e "\t" $absent
 		return 1
 	end
 end
 
 function check_dep
-	set pacs (pacman -Qeq)
 	set redundant ()
-	for pac in $pacs
+	for pac in (pacman -Qeq)
 		set req (pacman -Qi $pac | grep "Required By")
 		if [ $req[1] != "Required By     : None" ]
 			set --append redundant $pac

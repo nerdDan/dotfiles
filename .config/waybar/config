@@ -4,6 +4,7 @@
   "modules-left": ["sway/workspaces"],
   "modules-center": [],
   "modules-right": [
+    "custom/stock",
     "tray",
     "network",
     "pulseaudio",
@@ -27,6 +28,10 @@
       "default": "",
       "urgent": ""
     }
+  },
+  "custom/stock": {
+      "interval": 60,
+      "exec": "$HOME/.config/waybar/stock.py"
   },
   "tray": { "spacing": 10 },
   "network": {

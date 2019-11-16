@@ -6,3 +6,4 @@ postgresql
 python-pipenv
 python-pylint
 rustup
+yarn
