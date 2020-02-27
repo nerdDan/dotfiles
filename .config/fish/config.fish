@@ -1,7 +1,6 @@
 set -x _JAVA_AWT_WM_NONREPARENTING 1
 set -x EDITOR nvim
 set -x GTK_IM_MODULE fcitx
-set -x MSF_DATABASE_CONFIG $HOME/.msf4/database.yml
 set -x QT_AUTO_SCREEN_SCALE_FACTOR 0
 set -x QT_IM_MODULE fcitx
 set -x SONAR_SCANNER_HOME /opt/sonar-scanner

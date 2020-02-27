@@ -26,10 +26,13 @@ input "*" {
 }
 
 # assignations
-assign [class="^code-oss$"] 2
-assign [class="^firefox$"] 3
-assign [class="^tutanota-desktop$"] 4
-assign [class="^Signal$"] 4
+assign [app_id="^kitty$"] 1
+assign [app_id="^org.gnome.Nautilus$"] 2
+assign [class="^Code$"] 3
+assign [class="^firefox$"] 4
+assign [class="^Thunderbird$"] 5
+assign [class="^tutanota-desktop$"] 5
+assign [class="^Signal$"] 5
 assign [class="^Vmware$"] 10
 
 # autostart

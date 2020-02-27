@@ -1,7 +1,7 @@
 {
   "layer": "top",
-  "position": "bottom",
-  "modules-left": ["sway/workspaces"],
+  "position": "top",
+  "modules-left": ["sway/workspaces", "sway/window"],
   "modules-center": [],
   "modules-right": [
     "custom/stock",
@@ -13,7 +13,9 @@
     "memory",
     "temperature",
     "battery",
-    "clock"
+    "clock#ny",
+    "clock#la",
+    "clock#local"
   ],
   "sway/workspaces": {
     "disable-scroll": true,
@@ -21,41 +23,42 @@
     "format": "{name} {icon}",
     "format-icons": {
       "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
       "10": "",
       "default": "",
       "urgent": ""
     }
   },
+  "sway/window": { "tooltip": false },
   "custom/stock": {
-      "interval": 60,
+      "interval": 600,
+      "return-type": "json",
       "exec": "$HOME/.config/waybar/stock.py"
   },
   "tray": { "spacing": 10 },
   "network": {
     "format-disconnected": " DOWN",
-    "format-ethernet": "",
+    "format-ethernet": " {ipaddr}/{cidr}",
     "format-wifi": " {essid} ({signalStrength}%)",
-    "tooltip-format-disconnected": " DOWN",
-    "tooltip-format-ethernet": " {ifname} {ipaddr}/{cidr}",
-    "tooltip-format-wifi": " {ifname} {ipaddr}/{cidr}",
-    "format-alt": " {bandwidthDownOctets}  {bandwidthUpOctets}"
+    "format-alt": " {bandwidthDownOctets}  {bandwidthUpOctets}",
+    "tooltip": false
   },
   "pulseaudio": {
     "scroll-step": 5,
     "format": "{icon} {volume}%",
-    "format-bluetooth": "{icon}  {volume}%",
-    "format-muted": " MUTED",
+    "format-bluetooth": " {icon} {volume}%",
+    "format-muted": " MUTED",
     "format-icons": {
-      "headphones": "",
+      "headphones": "",
       "handsfree": "",
       "headset": "",
       "phone": "",
       "portable": "",
-      "car": "",
-      "default": [""]
+      "car": "",
+      "default": ["", "", ""]
     },
     "on-click": "pavucontrol"
   },
@@ -64,11 +67,16 @@
     "format-icons": [""]
   },
   "cpu": {
-    "format": " {usage}%",
+    "format": " {usage}%",
     "tooltip": false
   },
   "memory": {
-    "format": " {}%"
+    "format": " {}%",
+    "states": {
+        "warning": 80,
+        "critical": 90
+    },
+    "tooltip": false
   },
   "temperature": {
     "critical-threshold": 80,
@@ -86,7 +94,15 @@
     "format-alt": "{icon} {time}",
     "format-icons": ["", "", "", "", ""]
   },
-  "clock": {
+  "clock#ny": {
+    "format": "{:%Z %a %H:%M}",
+    "timezone": "America/New_York"
+  },
+  "clock#la": {
+    "format": "{:%Z %a %H:%M}",
+    "timezone": "America/Los_Angeles"
+  },
+  "clock#local": {
     "format": "{:%Z %Y %h %d %a %H:%M:%S}",
     "interval": 1
   }

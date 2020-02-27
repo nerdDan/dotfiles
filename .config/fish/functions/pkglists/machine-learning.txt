@@ -1,4 +1,0 @@
-python-matplotlib
-python-pandas
-python-scikit-learn
-python-tensorflow

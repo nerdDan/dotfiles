@@ -1,10 +1,12 @@
 autoconf
 base
 fakeroot
+intel-ucode
 linux
 linux-firmware
 linux-headers
 man-db
 man-pages
 networkmanager
+throttled
 usbutils

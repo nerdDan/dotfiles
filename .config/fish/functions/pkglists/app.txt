@@ -2,7 +2,6 @@ gimp
 inkscape
 libreoffice-still
 neovim
-sweethome3d
 texlive-fontsextra
 texlive-latexextra
 texlive-science

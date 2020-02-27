@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.75);
   color: #fff;
 }
 
@@ -25,13 +25,14 @@ window#waybar {
 
 #workspaces button.focused {
   background-color: rgba(255, 255, 255, 0.25);
-  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
 #workspaces button.urgent {
   background-color: rgba(255, 0, 0, 0.25);
 }
 
+#window,
 #tray,
 #network,
 #pulseaudio,
@@ -45,7 +46,19 @@ window#waybar {
   color: #fff;
 }
 
+#battery.warning:not(.charging) {
+  background-color: rgba(255, 128, 0, 0.5);
+}
+
 #battery.critical:not(.charging) {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+#memory.warning {
+  background-color: rgba(255, 128, 0, 0.5);
+}
+
+#memory.critical {
   background-color: rgba(255, 0, 0, 0.5);
 }
 

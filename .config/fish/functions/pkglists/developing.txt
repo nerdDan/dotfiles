@@ -1,9 +1,8 @@
 cmake
-code
 docker-compose
+flake8
 go
-postgresql
+python-black
 python-pipenv
-python-pylint
 rustup
 yarn
