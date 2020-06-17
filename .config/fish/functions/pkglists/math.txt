@@ -1,5 +1,0 @@
-jupyterlab
-python-scikit-learn
-python-seaborn
-python-statsmodels
-sagemath-jupyter

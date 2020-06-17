@@ -1,3 +1,4 @@
+code
 gimp
 inkscape
 libreoffice-still

@@ -1,5 +1,7 @@
 autoconf
+automake
 base
+bison
 fakeroot
 intel-ucode
 linux
@@ -8,5 +10,6 @@ linux-headers
 man-db
 man-pages
 networkmanager
+pkgconf
 throttled
 usbutils

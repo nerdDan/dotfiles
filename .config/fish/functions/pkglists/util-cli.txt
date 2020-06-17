@@ -1,9 +1,7 @@
 android-tools
 android-udev
-dictd
 fish
 fwupd
-gtop
 htop
 light
 p7zip

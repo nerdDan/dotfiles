@@ -1,8 +1,10 @@
 cmake
 docker-compose
-flake8
+gdb
 go
-python-black
 python-pipenv
+python-scikit-learn
+python-seaborn
+python-statsmodels
 rustup
 yarn

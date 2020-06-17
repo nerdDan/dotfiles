@@ -1,6 +1,7 @@
-aspell-en
-aspell-es
+dictd
 fcitx-anthy
 fcitx-configtool
-fcitx-gtk3
 fcitx-rime
+hunspell-en_GB
+mythes-en
+rime-emoji

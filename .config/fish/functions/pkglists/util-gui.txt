@@ -2,10 +2,9 @@ baobab
 bleachbit
 blueman
 eog
+evince
 file-roller
 gnome-disk-utility
-gnome-font-viewer
-gst-libav
 gvfs-mtp
 kitty
 mpv
@@ -14,5 +13,3 @@ noto-fonts-cjk
 noto-fonts-emoji
 pavucontrol
 seahorse
-sushi
-uget

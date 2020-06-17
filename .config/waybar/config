@@ -4,7 +4,6 @@
   "modules-left": ["sway/workspaces", "sway/window"],
   "modules-center": [],
   "modules-right": [
-    "custom/stock",
     "tray",
     "network",
     "pulseaudio",
@@ -13,9 +12,9 @@
     "memory",
     "temperature",
     "battery",
-    "clock#ny",
     "clock#la",
-    "clock#local"
+    "clock#ny",
+    "clock#sh"
   ],
   "sway/workspaces": {
     "disable-scroll": true,
@@ -60,7 +59,8 @@
       "car": "",
       "default": ["", "", ""]
     },
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol",
+    "tooltip": false
   },
   "backlight": {
     "format": "{icon} {percent}%",
@@ -94,16 +94,22 @@
     "format-alt": "{icon} {time}",
     "format-icons": ["", "", "", "", ""]
   },
-  "clock#ny": {
-    "format": "{:%Z %a %H:%M}",
-    "timezone": "America/New_York"
-  },
   "clock#la": {
-    "format": "{:%Z %a %H:%M}",
+    "format": "{:%Z %d %a %H:%M}",
+    "tooltip-format": "{:%Y %h %d %T}",
+    "interval": 1,
     "timezone": "America/Los_Angeles"
   },
-  "clock#local": {
-    "format": "{:%Z %Y %h %d %a %H:%M:%S}",
-    "interval": 1
+  "clock#ny": {
+    "format": "{:%Z %d %a %H:%M}",
+    "tooltip-format": "{:%Y %h %d %T}",
+    "interval": 1,
+    "timezone": "America/New_York"
+  },
+  "clock#sh": {
+    "format": "{:%Z %d %a %H:%M}",
+    "tooltip-format": "{:%Y %h %d %T}",
+    "interval": 1,
+    "timezone": "Asia/Shanghai"
   }
 }

@@ -1,6 +1,5 @@
 aria2
 firefox
-links
 signal-desktop
 thunderbird
 translate-shell
