@@ -2,14 +2,13 @@ autoconf
 automake
 base
 bison
-fakeroot
+fwupd
 intel-ucode
-linux
+linux-lts
 linux-firmware
-linux-headers
+linux-lts-headers
 man-db
 man-pages
 networkmanager
 pkgconf
 throttled
-usbutils

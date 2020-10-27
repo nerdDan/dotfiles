@@ -1,6 +1,5 @@
 aria2
 firefox
 signal-desktop
-thunderbird
 translate-shell
 youtube-dl

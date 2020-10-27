@@ -1,3 +1,4 @@
+boost
 cmake
 docker-compose
 gdb
@@ -6,5 +7,6 @@ python-pipenv
 python-scikit-learn
 python-seaborn
 python-statsmodels
+ruby-bundler
 rustup
 yarn

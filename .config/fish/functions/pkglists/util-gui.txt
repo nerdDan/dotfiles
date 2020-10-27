@@ -5,6 +5,7 @@ eog
 evince
 file-roller
 gnome-disk-utility
+gnome-podcasts
 gvfs-mtp
 kitty
 mpv
@@ -13,3 +14,4 @@ noto-fonts-cjk
 noto-fonts-emoji
 pavucontrol
 seahorse
+ttf-sarasa-gothic

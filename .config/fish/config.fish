@@ -7,7 +7,6 @@ set -x XMODIFIERS @im=fcitx
 set -x _JAVA_AWT_WM_NONREPARENTING 1
 
 set -x PATH $PATH $HOME/.local/bin
-set -x PATH $PATH $HOME/.gem/ruby/2.7.0/bin
 set -x PATH $PATH $HOME/.yarn/bin
 
 kitty + complete setup fish | source

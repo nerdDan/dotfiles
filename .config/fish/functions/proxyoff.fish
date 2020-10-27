@@ -6,4 +6,8 @@ function proxyoff
   set -e HTTPS_PROXY
   set -e FTP_PROXY
   set -e no_proxy
+  dconf write /system/proxy/mode \'none\'
+  dconf reset -f /system/proxy/http/
+  dconf reset -f /system/proxy/https/
+  dconf reset -f /system/proxy/socks/
 end

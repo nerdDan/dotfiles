@@ -31,16 +31,16 @@ input type:keyboard {
 # assignations
 assign [app_id="^kitty$"] 1
 assign [app_id="^org.gnome.Nautilus$"] 2
-assign [class="^code-oss$"] 3
+assign [class ="^code-oss$"] 3
 assign [app_id="^firefox$"] 4
-assign [class="^Chromium$"] 4
 assign [app_id="^thunderbird$"] 5
-assign [class="^Signal$"] 5
-assign [class="^Vmware$"] 10
+assign [class ="^tutanota-desktop$"] 5
+assign [class ="^Signal$"] 5
+assign [class ="^Vmware$"] 10
 
 # autostart
 exec blueman-applet
-exec fcitx-autostart
+exec fcitx
 exec kitty
 exec mako
 exec swayidle  -w \
@@ -49,7 +49,6 @@ exec swayidle  -w \
   resume 'swaymsg "output * dpms on"' \
   before-sleep 'swaylock -f -c 000000'
 
-floating_minimum_size 1100 x 0
 for_window [app_id="^firefox$"] inhibit_idle fullscreen
 
 # key-bindings: basics
@@ -95,8 +94,8 @@ bindsym $mod+minus scratchpad show
 bindsym XF86AudioRaiseVolume  exec pactl set-sink-volume @DEFAULT_SINK@ +6553
 bindsym XF86AudioLowerVolume  exec pactl set-sink-volume @DEFAULT_SINK@ -6553
 bindsym XF86AudioMute         exec pactl set-sink-mute   @DEFAULT_SINK@ toggle
-bindsym XF86MonBrightnessDown exec light -U 5
-bindsym XF86MonBrightnessUp   exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 10
+bindsym XF86MonBrightnessUp   exec light -A 10
 
 # key-bindings: screen capture
 bindsym --release Print exec grim screenshot_$(date '+%Y%m%d_%H%M%S').png

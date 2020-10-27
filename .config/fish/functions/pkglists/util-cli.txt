@@ -1,12 +1,11 @@
 android-tools
 android-udev
 fish
-fwupd
 htop
 light
 p7zip
+pacman-contrib
 pacutils
-pulseaudio-bluetooth
+pandoc
 the_silver_searcher
 tor
-v2ray
