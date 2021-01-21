@@ -1,5 +1,5 @@
 aria2
-firefox
+chromium
 signal-desktop
 translate-shell
 youtube-dl

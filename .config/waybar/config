@@ -32,11 +32,6 @@
     }
   },
   "sway/window": { "tooltip": false },
-  "custom/stock": {
-      "interval": 600,
-      "return-type": "json",
-      "exec": "$HOME/.config/waybar/stock.py"
-  },
   "tray": { "spacing": 10 },
   "network": {
     "format-disconnected": " DOWN",
@@ -97,19 +92,16 @@
   "clock#la": {
     "format": "{:%Z %d %a %H:%M}",
     "tooltip-format": "{:%Y %h %d %T}",
-    "interval": 1,
     "timezone": "America/Los_Angeles"
   },
   "clock#ny": {
     "format": "{:%Z %d %a %H:%M}",
     "tooltip-format": "{:%Y %h %d %T}",
-    "interval": 1,
     "timezone": "America/New_York"
   },
   "clock#sh": {
     "format": "{:%Z %d %a %H:%M}",
     "tooltip-format": "{:%Y %h %d %T}",
-    "interval": 1,
     "timezone": "Asia/Shanghai"
   }
 }

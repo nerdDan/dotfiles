@@ -1,4 +1,6 @@
 boost
+sagemath
+clang
 cmake
 docker-compose
 gdb

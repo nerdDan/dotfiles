@@ -1,0 +1,49 @@
+\documentclass[letterpaper, 12pt]{scrartcl}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{booktabs}
+%\usepackage{ccfonts}
+\usepackage{cmbright}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{listings}
+\usepackage{longtable}
+\usepackage{natbib}
+\usepackage{scrlayer-scrpage}
+\usepackage{subcaption}
+\usepackage{xcolor}
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\bibliographystyle{plainnat}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen}
+\KOMAoptions{parskip=half}
+$highlighting-macros$
+
+\cofoot{\color{teal}\upshape Page \thepage~of~\pageref*{LastPage}}
+\rohead{\color{teal}\itshape Daniel Zhou}
+$if(title)$
+\lohead{\color{teal}\scshape $title$}
+$endif$
+
+\newcommand\diff{\mathop{}\!\mathrm{d}}
+\newcommand\tran{^{\mkern-1.5mu\mathsf{T}}}
+\DeclareMathOperator*\E{E}
+\DeclareMathOperator*\Var{Var}
+\DeclareMathOperator*\Cov{Cov}
+\DeclareMathOperator*\argmax{arg\,max}
+\DeclareMathOperator*\argmin{arg\,min}
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{theorem}{Theorem}[section]
+
+\begin{document}
+$body$
+\end{document}

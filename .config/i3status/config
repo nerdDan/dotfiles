@@ -8,10 +8,12 @@ general {
 order += "wireless _first_"
 order += "volume master"
 order += "cpu_usage"
+order += "memory"
 order += "cpu_temperature 0"
 order += "battery all"
-order += "tztime utc"
-order += "tztime local"
+order += "tztime la"
+order += "tztime ny"
+order += "tztime sh"
 
 wireless _first_ {
   format_up = " %essid%quality"
@@ -24,7 +26,11 @@ volume master {
 }
 
 cpu_usage {
-  format = " %usage"
+  format = " %usage"
+}
+
+memory {
+  format = " %free"
 }
 
 cpu_temperature 0 {
@@ -44,11 +50,17 @@ battery all {
   status_full = ""
 }
 
-tztime utc {
+tztime la {
   format = "%Z %a %H:%M:%S"
-  timezone = "UTC"
+  timezone = "America/Los_Angeles"
 }
 
-tztime local {
-  format = "%Z %Y %h %d %a %H:%M:%S"
+tztime ny {
+  format = "%Z %a %H:%M:%S"
+  timezone = "America/New_York"
+}
+
+tztime sh {
+  format = "%Z %a %H:%M:%S"
+  timezone = "Asia/Shanghai"
 }
