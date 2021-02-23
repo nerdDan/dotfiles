@@ -1,0 +1,30 @@
+{
+    "C_Cpp.clang_format_sortIncludes": true,
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cStandard": "c17",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontFamily": "Sarasa Mono CL",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "explorer.confirmDelete": false,
+    "files.insertFinalNewline": true,
+    "git.autofetch": true,
+    "javascript.format.semicolons": "insert",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "pandoc.pdfOptString": "--template homework --pdf-engine-opt=-shell-escape",
+    "python.dataScience.useNotebookEditor": false,
+    "python.formatting.provider": "black",
+    "python.languageServer": "Microsoft",
+    "tabnine.experimentalAutoImports": true,
+    "typescript.format.insertSpaceAfterConstructor": true,
+    "typescript.format.semicolons": "insert",
+    "typescript.preferences.quoteStyle": "double",
+    "window.menuBarVisibility": "toggle",
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    }
+}

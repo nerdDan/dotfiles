@@ -1,0 +1,36 @@
+axes.formatter.limits       : -2, 2
+figure.figsize              : 5.6, 3.15
+patch.force_edgecolor       : True
+savefig.bbox                : tight
+xtick.labelsize             : 9
+ytick.labelsize             : 9
+
+axes.edgecolor                     : D0D0E0
+axes.grid                          : True
+axes.labelcolor                    : 707074
+axes.prop_cycle                    : cycler('color', ['00BEFF', 'D4CA3A', 'FF6DAE', '67E1B5', 'EBACFA', '9E9E9E', 'F1988E', '5DB15A', 'E28544', '52B8AA'])
+axes.spines.bottom                 : False
+axes.spines.left                   : False
+axes.spines.right                  : False
+axes.spines.top                    : False
+boxplot.boxprops.color             : 9ae1f9
+boxplot.boxprops.linewidth         : 0
+boxplot.capprops.color             : C0
+boxplot.flierprops.color           : C0
+boxplot.flierprops.markeredgecolor : white
+boxplot.flierprops.markerfacecolor : auto
+boxplot.meanprops.color            : C1
+boxplot.meanprops.markeredgecolor  : C1
+boxplot.meanprops.markerfacecolor  : C1
+boxplot.medianprops.color          : 9ae1f9
+boxplot.patchartist                : True
+boxplot.whiskerprops.color         : C0
+grid.alpha                         : 0.2
+grid.color                         : 93939c
+grid.linestyle                     : --
+lines.linewidth                    : 2
+lines.markeredgecolor              : white
+patch.edgecolor                    : white
+text.color                         : 707074
+xtick.color                        : 707074
+ytick.color                        : 707074

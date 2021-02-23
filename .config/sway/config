@@ -39,7 +39,7 @@ assign [class ="^Vmware$"] 10
 
 # autostart
 exec blueman-applet
-exec fcitx
+exec fcitx5
 exec kitty
 exec mako
 exec swayidle  -w \

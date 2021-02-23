@@ -4,11 +4,11 @@ base
 bison
 fwupd
 intel-ucode
-linux-lts
 linux-firmware
+linux-lts
 linux-lts-headers
 man-db
 man-pages
 networkmanager
 pkgconf
-throttled
+sudo

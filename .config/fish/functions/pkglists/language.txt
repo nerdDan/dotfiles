@@ -1,7 +1,9 @@
 dictd
-fcitx-anthy
-fcitx-configtool
-fcitx-rime
+fcitx5-configtool
+fcitx5-gtk
+fcitx5-material-color
+fcitx5-mozc
+fcitx5-rime
 hunspell-en_GB
 mythes-en
 rime-emoji

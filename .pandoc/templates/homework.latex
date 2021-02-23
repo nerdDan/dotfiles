@@ -7,13 +7,13 @@
 \usepackage{amsthm}
 \usepackage{bm}
 \usepackage{booktabs}
-%\usepackage{ccfonts}
 \usepackage{cmbright}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{lastpage}
 \usepackage{listings}
 \usepackage{longtable}
+\usepackage{minted}
 \usepackage{natbib}
 \usepackage{scrlayer-scrpage}
 \usepackage{subcaption}
@@ -25,6 +25,7 @@ $endfor$
 \bibliographystyle{plainnat}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen}
+\setminted{fontsize=\fontsize{9pt}{9.9pt}}
 \KOMAoptions{parskip=half}
 $highlighting-macros$
 

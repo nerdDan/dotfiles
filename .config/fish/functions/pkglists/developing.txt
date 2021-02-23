@@ -1,5 +1,4 @@
 boost
-sagemath
 clang
 cmake
 docker-compose
@@ -11,4 +10,6 @@ python-seaborn
 python-statsmodels
 ruby-bundler
 rustup
+sagemath
+ts-node
 yarn
